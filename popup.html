@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 10px;
+    }
+    .api-call {
+      margin-bottom: 10px;
+    }
+    .api-call.failed {
+      color: red;
+    }
+    #summary {
+      margin-bottom: 20px;
+    }
+    #token-container {
+      margin-bottom: 20px;
+    }
+    #copy-token-btn {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>API Calls</h1>
+  <div id="token-container">
+    <h3>Auth Token</h3>
+    <div id="token"></div>
+    <button id="copy-token-btn">Copy Token</button>
+  </div>
+  <div id="summary"></div>
+  <div id="api-calls"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+/* styles.css */
+#api-call-overlay {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 350px;
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 10000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.api-call {
+    margin-bottom: 8px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.api-call.failed {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: red;
+}
+
+.api-call.success {
+    background-color: rgba(0, 128, 0, 0.2);
+    color: lightgreen;
+}
